@@ -14,18 +14,29 @@ export default class App extends Component{
 
     this.state = {
       menu: false,
+      serviceMenu: false,
     }
   }
 
-  toggleMenu = () => {
-    this.setState({menu: !this.state.menu})
+  toggleMenu = (menuType) => {
+    if(menuType === 'menu' && this.state.menu) {
+      this.setState({[
+        menuType]: !this.state[menuType],
+        serviceMenu: false
+      })
+    } else{
+      this.setState({[menuType]: !this.state[menuType]})
+    }
   }
 
   render() {
     return (
       <div className="App">
-        <OffClickWrapper open={this.state.menu} onClick={this.toggleMenu}/>
-        <MobileMenu open={this.state.menu} toggleMenu={this.toggleMenu}/>
+        <OffClickWrapper open={this.state.menu} onClick={() => this.toggleMenu('menu')}/>
+        <MobileMenu 
+          open={this.state.menu} 
+          serviceMenu={this.state.serviceMenu}
+          toggleMenu={this.toggleMenu}/>
         <Navbar toggleMenu={this.toggleMenu}/>
         {router}
         <Info/>

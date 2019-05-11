@@ -9,6 +9,5 @@ export default(
         <Route exact path='/' component={Home}></Route>
         <Route path='/services/:id' component={Services}></Route>
         <Route path='/contact' component={Contact}></Route>
-
     </Switch>
 )
