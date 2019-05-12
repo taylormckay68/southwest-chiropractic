@@ -10,7 +10,7 @@ export const HamMenu = styled.div`
     height: 50px;
 `
 export const LogoLink = styled(Link)`
-    
+    display: flex;
 `
 export const NavbarContainer = styled.div`
     width: 100vw;

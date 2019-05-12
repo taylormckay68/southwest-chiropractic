@@ -1,7 +1,15 @@
 import React from 'react'
+import { HomeWrapper } from './styled-components/Home';
+import Hero from './Hero';
+import HomeServices from './HomeServices';
+import About from './About';
 
 export default function Home() {
     return(
-        <div>Home</div>
+        <HomeWrapper className="home-wrapper">
+            <Hero/>
+            <HomeServices/>
+            <About/>
+        </HomeWrapper>
     )
 }

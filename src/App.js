@@ -32,7 +32,7 @@ export default class App extends Component{
   render() {
     return (
       <div className="App">
-        <OffClickWrapper open={this.state.menu} onClick={() => this.toggleMenu('menu')}/>
+        <OffClickWrapper className='off-click-wrapper' open={this.state.menu} onClick={() => this.toggleMenu('menu')}/>
         <MobileMenu 
           open={this.state.menu} 
           serviceMenu={this.state.serviceMenu}
