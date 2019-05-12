@@ -1,5 +1,5 @@
 import React from 'react';
-import {AboutBlockWrapper, AboutImage, AboutText, AboutTextHeader, AboutTextWrapper, AboutWrapper} from './styled-components/About';
+import {AboutBlockWrapper, AboutImage, AboutText, AboutTextHeader, AboutTextWrapper, AboutWrapper, MeetWrapper, MeetTextWrapper, MeetTextHeader, MeetText} from './styled-components/About';
 import {aboutText, meetText} from '../../utils';
 const famPic = require('../../assets//family-pic-low.jpg');
 
@@ -9,19 +9,19 @@ export default function About() {
             <AboutWrapper className='about-wrapper' backColor='#f7f7f7'>
                 <AboutImage className='about-image' picUrl={famPic}/>
                 <AboutTextWrapper className='about-text-wrapper'>
-                    <AboutTextHeader>About Southwest Chiropractic</AboutTextHeader>
+                    <AboutTextHeader className='about-text-header'>About Southwest Chiropractic</AboutTextHeader>
                     <AboutText>{aboutText}
                     </AboutText>
                 </AboutTextWrapper>
             </AboutWrapper>
-            <AboutWrapper className='meet-wrapper' backColor="white">
-                <AboutTextWrapper className='meet-text-wrapper'>
-                    <AboutTextHeader>Meet Dr. Peterson</AboutTextHeader>
-                    <AboutText>{meetText}
-                    </AboutText>
-                </AboutTextWrapper>
+            <MeetWrapper className='meet-wrapper' backColor="white">
+                <MeetTextWrapper className='meet-text-wrapper'>
+                    <MeetTextHeader className='meet-text-header'>Meet Dr. Peterson</MeetTextHeader>
+                    <MeetText>{meetText}
+                    </MeetText>
+                </MeetTextWrapper>
                 <AboutImage className='meet-image' picUrl={famPic}/>
-            </AboutWrapper>
+            </MeetWrapper>
         </AboutBlockWrapper>
     )
 }

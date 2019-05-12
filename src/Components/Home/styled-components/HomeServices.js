@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
 export const HomeServicesWrapper = styled.div`
-
+    padding: 45px 0;
 `
 export const OfferText = styled.h4`
     text-align: center;
     color: gray;
+    margin: 0;
 `
 export const ServiceItemAnchor = styled(Link)`
     height: 100%;
@@ -32,7 +33,6 @@ export const ServiceItemWrapper = styled.div`
 `
 export const ServiceItemsContainer = styled.div`
     width: calc(100vw - 40px);
-    background: lightgray;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -40,4 +40,6 @@ export const ServiceItemsContainer = styled.div`
 `
 export const ServicesText = styled.h3`
     text-align: center;
+    font-size: 40px;
+    margin: 0;
 `

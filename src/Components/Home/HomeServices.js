@@ -5,7 +5,7 @@ import {serviceData} from '../../utils';
 export default function HomeServices() {
     return(
         <HomeServicesWrapper className='home-services-wrapper'>
-            <OfferText className='offer-text'>What We Offer</OfferText>
+            <OfferText className='offer-text'>WHAT WE OFFER</OfferText>
             <ServicesText className='services-text'>Services</ServicesText>
             <ServiceItemsContainer className='service-items-container'>
                 {serviceData.map((e,i) => {
