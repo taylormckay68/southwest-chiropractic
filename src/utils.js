@@ -20,13 +20,13 @@ export const serviceData = [
         description: ''
     },
     {
-        service: 'Sciatica Management',
-        link: 'sciatica-management',
+        service: 'Scoliosis',
+        link: 'scoliosis',
         description: ''
     },
     {
-        service: 'Scoliosis',
-        link: 'scoliosis',
+        service: 'Sciatica Management',
+        link: 'sciatica-management',
         description: ''
     },
     {

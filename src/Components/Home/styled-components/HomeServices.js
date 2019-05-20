@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
+import { yellow } from 'ansi-colors';
 
 export const HomeServicesWrapper = styled.div`
     padding: 45px 0;
@@ -42,4 +43,28 @@ export const ServicesText = styled.h3`
     text-align: center;
     font-size: 40px;
     margin: 0;
+`
+export const ServiceItemsTempCont = styled.div`
+    width: 250px;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 600px) {
+        width: 550px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @media (min-width: 1000px) {
+        width: 800px;
+    }
+`
+export const ServiceItemTempWrapper = styled.div`
+    height: 35px;
+    font-size: 24px;
+    line-height: 30px;
+    width: 250px;
+    @media (min-width: 1000px){
+        width: 270px;
+    }
 `

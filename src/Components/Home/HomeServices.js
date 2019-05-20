@@ -1,5 +1,5 @@
 import React from 'react';
-import {HomeServicesWrapper, OfferText, ServiceItemsContainer, ServiceItemWrapper, ServicesText, ServiceItemAnchor, ServiceItemText} from './styled-components/HomeServices';
+import {HomeServicesWrapper, OfferText, ServiceItemsContainer, ServiceItemWrapper, ServicesText, ServiceItemAnchor, ServiceItemText, ServiceItemsTempCont, ServiceItemTempWrapper} from './styled-components/HomeServices';
 import {serviceData} from '../../utils';
 
 export default function HomeServices() {
@@ -7,7 +7,7 @@ export default function HomeServices() {
         <HomeServicesWrapper className='home-services-wrapper'>
             <OfferText className='offer-text'>WHAT WE OFFER</OfferText>
             <ServicesText className='services-text'>Services</ServicesText>
-            <ServiceItemsContainer className='service-items-container'>
+            {/* <ServiceItemsContainer className='service-items-container'>
                 {serviceData.map((e,i) => {
                     return(
                         <ServiceItemWrapper className='service-item-wrapper' key={i}>
@@ -17,7 +17,16 @@ export default function HomeServices() {
                         </ServiceItemWrapper>
                     )
                 })}
-            </ServiceItemsContainer>
+            </ServiceItemsContainer> */}
+            <ServiceItemsTempCont>
+                {serviceData.map((e, i) => {
+                    return(
+                        <ServiceItemTempWrapper key={i}>
+                            • {e.service}
+                        </ServiceItemTempWrapper>
+                    )
+                })}
+            </ServiceItemsTempCont>
         </HomeServicesWrapper>
     )
 }

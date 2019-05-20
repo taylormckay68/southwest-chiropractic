@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import MobileMenu from './Components/MobileMenu/MobileMenu';
 import Info from './Components/Info/Info';
 import Map from './Components/Map/Map';
-// import Footer from './Components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
 import { OffClickWrapper } from './Components/MobileMenu/styled-components/MobileMenu';
 import './App.css';
 
@@ -41,7 +41,7 @@ export default class App extends Component{
         {router}
         <Info/>
         <Map/>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     );
   }

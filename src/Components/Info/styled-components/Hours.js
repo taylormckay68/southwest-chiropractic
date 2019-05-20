@@ -17,9 +17,16 @@ export const HoursHeader = styled.p`
 `
 export const HoursWrapper = styled.div`
     margin-top: 45px;
+    margin-right: 20px;
+    @media (min-width: 700px) {
+        margin-top: 0;
+    }
 `
 export const HoursContentWrapper = styled.div`
     width: calc(100vw - 20px);
     display: flex;
     margin-top: 20px;
+    @media (min-width: 700px) {
+        width: max-content;
+    }
 `

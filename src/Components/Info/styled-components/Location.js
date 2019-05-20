@@ -9,5 +9,6 @@ export const LocationText = styled.p`
     line-height: 25px;
 `
 export const LocationWrapper = styled.div`
-
+    margin-right: 20px;
+    min-width: 176px;
 `

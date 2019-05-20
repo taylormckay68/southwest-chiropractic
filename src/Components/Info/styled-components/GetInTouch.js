@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const GetInTouchWrapper = styled.div`
     margin-top: 45px;
+    @media (min-width: 700px) {
+        margin-top: 0;
+    }
 `
 export const GetInTouchHeader = styled.p`
     color: #6488ca;
