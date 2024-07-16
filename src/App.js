@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import router from './router';
 import Navbar from './Components/Navbar/Navbar';
 import MobileMenu from './Components/MobileMenu/MobileMenu';
@@ -8,42 +8,25 @@ import Footer from './Components/Footer/Footer';
 import { OffClickWrapper } from './Components/MobileMenu/styled-components/MobileMenu';
 import './App.css';
 
-export default class App extends Component{
-  constructor(props){
-    super(props);
-
-    this.state = {
-      menu: false,
-      serviceMenu: false,
-    }
-  }
-
-  toggleMenu = (menuType) => {
-    if(menuType === 'menu' && this.state.menu) {
-      this.setState({[
-        menuType]: !this.state[menuType],
-        serviceMenu: false
-      })
-    } else{
-      this.setState({[menuType]: !this.state[menuType]})
-    }
-  }
-
-  render() {
+const App = (props) => {
+  const [openMenu, setOpenMenu] = useState(false);
+  const [openServiceMenu, setOpenServiceMenu] = useState(false);
     return (
       <div className="App">
-        <OffClickWrapper className='off-click-wrapper' open={this.state.menu} onClick={() => this.toggleMenu('menu')}/>
+        <OffClickWrapper className='off-click-wrapper' open={openMenu} onClick={() => setOpenMenu(false)}/>
         <MobileMenu 
-          open={this.state.menu} 
-          serviceMenu={this.state.serviceMenu}
-          toggleMenu={this.toggleMenu}/>
-        <Navbar toggleMenu={this.toggleMenu}/>
+          open={openMenu} 
+          serviceMenu={openServiceMenu}
+          setOpenMenu={setOpenMenu}
+          setOpenServiceMenu={setOpenServiceMenu}
+        />
+        <Navbar setOpenMenu={setOpenMenu}/>
         {router}
         <Info/>
         <Map/>
         <Footer/>
       </div>
     );
-  }
 }
 
+export default App;

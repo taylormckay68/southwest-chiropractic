@@ -7,9 +7,9 @@ export default function Hero() {
             <HeroInfoWrapper className="hero-info-wrapper">
                 <HeroTextWrapper>
                     <InfoLine>
-                        Southwest <br/>Chiropractic
+                        Southwest Chiropractic <br/>JUST MOVED!<br/> Now <br/>The Chiropractic Place
                     </InfoLine>
-                    <InfoLine2>South Jordan, UT</InfoLine2>
+                    <InfoLine2>8777 S Redwood Rd Ste. 250, West Jordan, UT</InfoLine2>
                 </HeroTextWrapper>
                 <CallButtonAnchor href="tel:1-801-254-9400">
                     <CallButton>
