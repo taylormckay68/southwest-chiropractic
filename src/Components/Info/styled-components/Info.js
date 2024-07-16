@@ -5,6 +5,7 @@ export const InfoWrapper = styled.div`
     box-sizing: border-box;
     padding: 45px 20px;
     border-top: 1px solid lightgray;
+    background-color: #f7f7f7;
     @media (min-width: 700px) {
         display: flex;
         justify-content: center;

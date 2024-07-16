@@ -47,28 +47,30 @@ export const HeroTextWrapper = styled.div`
 
 `
 export const InfoLine = styled.h1`
-    font-size: 40px;
+    font-size: 24px;
     text-align: center;
-    line-height: 40px;
+    line-height: 1.2;
     color: white;
     margin: 0;
     @media (min-width: 550px){
-        font-size: 50px;
-        line-height: 50px;
+        font-size: 32px;
+        line-height: 1.2;
     }
     @media (min-width: 1100px){
-        font-size: 65px;
-        line-height: 65px;
+        font-size: 40px;
+        line-height: 1.2;
     }
 `
 export const InfoLine2 = styled.h2`
     text-align: center;
     color: white;
     margin: 0;
+    line-height: 1.2;
+    font-size: 18px;
     @media (min-width: 550px) {
-        font-size: 30px;
+        font-size: 20px;
     }
     @media (min-width: 1100px){
-        font-size: 40px;
+        font-size: 32px;
     }
 `
