@@ -1,32 +1,33 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Days = styled.p`
-    line-height: 25px;
-`
+  line-height: 25px;
+`;
 export const DaysContainer = styled.div`
-    width: 130px;
-`
+  width: 130px;
+`;
 export const Hour = styled.p`
-    line-height: 25px;
-`
-export const HoursContainer = styled.div`
-
-`
+  line-height: 25px;
+`;
+export const HoursContainer = styled.div``;
 export const HoursHeader = styled.p`
-    color: #6488ca;
-`
+  color: #6488ca;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+`;
 export const HoursWrapper = styled.div`
-    margin-top: 45px;
-    margin-right: 20px;
-    @media (min-width: 700px) {
-        margin-top: 0;
-    }
-`
+  margin-top: 45px;
+  margin-right: 20px;
+  @media (min-width: 700px) {
+    margin-top: 0;
+  }
+`;
 export const HoursContentWrapper = styled.div`
-    width: calc(100vw - 20px);
-    display: flex;
-    margin-top: 20px;
-    @media (min-width: 700px) {
-        width: max-content;
-    }
-`
+  width: calc(100vw - 20px);
+  display: flex;
+  margin-top: 20px;
+  @media (min-width: 700px) {
+    width: max-content;
+  }
+`;
