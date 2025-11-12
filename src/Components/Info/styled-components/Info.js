@@ -1,20 +1,20 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const InfoWrapper = styled.div`
-    width: 100vw;
-    box-sizing: border-box;
-    padding: 45px 20px;
-    border-top: 1px solid lightgray;
-    background-color: #f7f7f7;
-    @media (min-width: 700px) {
-        display: flex;
-        justify-content: center;
-    }
-`
-export const InfoContainer = styled.div`
-    width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 20px;
+  border-top: 1px solid lightgray;
+  background-color: #f7f7f7;
+  @media (min-width: 700px) {
     display: flex;
-    max-width: 1000px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-`
+    justify-content: center;
+  }
+`;
+export const InfoContainer = styled.div`
+  width: 100%;
+  display: flex;
+  max-width: 1000px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
